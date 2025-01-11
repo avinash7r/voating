@@ -1,0 +1,23 @@
+model
+
+candidate model
+user model
+
+routes:
+
+user routes:
+
+    post /user/login   >> login
+    post /user/register >> register
+    
+    get /user     >> get profile
+    put /user     >> update profile
+    patch /user   >> update password
+    delete /user  >> delete account
+
+admin routes:
+    post /admin/candidate >> create candidate
+    put /admin/candidate >> update candidate
+    get /admin/candidate >> get all candidates
+    delete /admin/candidate >> delete candidate
+    
