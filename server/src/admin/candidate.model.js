@@ -27,6 +27,12 @@ const candidateSchema = new mongoose.Schema({
     votes:{
         type: Number,
         default: 0
+    },
+    voters: {
+        type: {
+            voter: [{ type: mongoose.Schema.Types.ObjectId, ref: 'User' }]
+        },
+        default: { voter: [] }
     }
 });
 
